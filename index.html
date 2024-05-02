@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Temprature is <span id="temprature-el">00.0</span>&deg;C</h1>
+            <section id="current-coordinates">
+                <h2>current coordinates</h2>
+                <div>
+                    <h3>Latitude: <span id="lat-span"></span></h3>
+                    <h3>longitude: <span id="lon-span"></span></h3>
+                </div>
+            </section>
+        </section>
+        <section>
+            <form id="coordinates">
+                <fieldset>
+                    <label for="latitude">Latitude</label>
+                    <input type="text" name="Latitude-box" id="latitude" required>
+                    <label for="longitude">longitude</label>
+                    <input type="text" name="longitude-box" id="longitude" required>
+                </fieldset>
+                <button type="submit">change location</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

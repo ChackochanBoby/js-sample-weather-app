@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    padding-inline: 1rem;
+}
+
+h1 {
+    color: orange;
+    text-transform: uppercase;
+    font-size: clamp(2rem, (5vw + 1rem), 7rem);
+    text-align: center;
+}
+
+#temprature-el {
+    color: orangered;
+}
+
+form {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+label {
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+button[type="submit"] {
+    padding: .5rem 1rem;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 8px;
+    max-width: 70%;
+    text-align: center;
+    color: white;
+    margin-inline: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-height: 2rem;
+    padding: .5rem 1rem;
+
+}
+
+input[type="text"]:focus-visible,
+input[type="text"]:focus,
+input[type="text"]:active,
+button[type="submit"]:focus-visible,
+button[type="submit"]:focus,
+button[type="submit"]:active {
+    outline: none;
+    border-color: orange;
+}
+
+input[type="text"]:hover,
+button[type="submit"]:hover {
+    outline: none;
+    border-color: orangered;
+}
+div{
+    padding: 1rem;
+    gap: .5rem;
+    margin-inline: auto;
+}
+h2{
+    font-size: 1.7rem;
+    color:yellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+#current-coordinates{
+    padding: 2rem;
+}
+h3{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
